@@ -1,0 +1,42 @@
+!                              -*-f90-*-     (for emacs)
+!
+!  Run parameters for small scale dynamos
+!
+&run_pars
+  cvsid="1372bffe4"
+  nt=10001, it1=100, isave=3000, itorder=3
+  dt=3.2e-3
+  !dvid=1e-4
+  !slice_position='m'
+  max_walltime= 41500 ! 12 h !
+  cdt=0.05
+  dtmin=1e-16
+  tmax=700.
+  lpencil_check_small=F
+  lpencil_check=F
+/
+&gpu_run_pars
+ ltest_bcs=F
+ lcpu_timestep_on_gpu=T
+/
+&eos_run_pars
+/
+&hydro_run_pars
+  ladvection_velocity=T
+  lupw_uu=T
+  lconservative=T
+  lconservative_pressure_on_rhs=T
+  lpressuregradient_gas=T
+/
+&density_run_pars
+  lupw_lnrho=T
+  ldensity_nolog=T
+/
+&viscosity_run_pars
+  mu=0e-5
+  ivisc='rho-nu-const'
+  lrate_of_strain_as_aux=T
+/
+&run_pars
+/
+
