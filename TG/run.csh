@@ -1,0 +1,1 @@
+/home/touko/pencil-code/bin/run.csh

@@ -1,12 +1,24 @@
-!  -*-f90-*-  (for Emacs)    vim:set filetype=fortran:  (for vim)
-!
-!  cparam.local
-!
-!  Local settings concerning grid size and number of CPUs.
-!  This file is included by cparam.f90
-!
-! MAUX CONTRIBUTION 12
-! COMMUNICATED AUXILIARIES 12
-!
-integer, parameter :: ncpus=1,nprocy=1,nprocz=ncpus/nprocy,nprocx=1
-integer, parameter :: nxgrid=32,nygrid=nxgrid,nzgrid=nxgrid
+###                             -*-Makefile-*-
+### Makefile for modular pencil code -- local part
+### Included by `Makefile'
+###
+MPICOMM   = mpicomm
+
+#================================
+# Please uncomment one IO option:
+#================================
+#IO        =   io_collect
+#--------------------------------
+IO        =   io_dist
+#--------------------------------
+#IO        =   io_hdf5
+#================================
+
+HYDRO     =   hydro
+DENSITY   =   density
+ENTROPY   = noentropy
+MAGNETIC  = nomagnetic
+RADIATION = noradiation
+EOS       = eos_idealgas
+#GPU = gpu_astaroth
+
