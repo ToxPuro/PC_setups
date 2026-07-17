@@ -1,1 +1,0 @@
-/home/touko/pencil-code/src/special/schur_triple_decomp.f90

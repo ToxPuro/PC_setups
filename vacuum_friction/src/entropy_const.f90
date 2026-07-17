@@ -1,1 +1,0 @@
-/home/touko/pencil-code/src/entropy_const.f90

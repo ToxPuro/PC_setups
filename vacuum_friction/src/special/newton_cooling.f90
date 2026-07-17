@@ -1,1 +1,0 @@
-/home/touko/pencil-code/src/special/newton_cooling.f90

@@ -1,1 +1,0 @@
-/home/touko/pencil-code/src/special/collapse.f90

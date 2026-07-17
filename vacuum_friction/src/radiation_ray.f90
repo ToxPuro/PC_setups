@@ -1,1 +1,0 @@
-/home/touko/pencil-code/src/radiation_ray.f90

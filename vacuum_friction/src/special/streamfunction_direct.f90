@@ -1,1 +1,0 @@
-/home/touko/pencil-code/src/special/streamfunction_direct.f90

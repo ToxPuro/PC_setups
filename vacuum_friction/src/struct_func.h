@@ -1,1 +1,0 @@
-/home/touko/pencil-code/src/struct_func.h

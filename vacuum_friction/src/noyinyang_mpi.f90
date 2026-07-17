@@ -1,1 +1,0 @@
-/home/touko/pencil-code/src/noyinyang_mpi.f90

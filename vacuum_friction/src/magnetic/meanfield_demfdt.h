@@ -1,1 +1,0 @@
-/home/touko/pencil-code/src/magnetic/meanfield_demfdt.h

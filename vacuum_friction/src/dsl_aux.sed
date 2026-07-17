@@ -1,1 +1,0 @@
-/home/touko/pencil-code/src/dsl_aux.sed
