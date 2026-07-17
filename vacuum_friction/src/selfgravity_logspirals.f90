@@ -1,0 +1,1 @@
+/home/touko/pencil-code/src/selfgravity_logspirals.f90

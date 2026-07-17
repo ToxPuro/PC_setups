@@ -1,0 +1,1 @@
+/home/touko/pencil-code/src/special/bc_strat.f90

@@ -1,0 +1,39 @@
+!  -*-f90-*-  (for Emacs)    vim:set filetype=fortran:  (for vim)
+!
+! Initialisation parameters
+!
+&init_pars
+  cvsid='$Id: start.in,v 1.3 2024/05/11 11:52:38 brandenb Exp $'
+  unit_system='set'
+  coord_system='spherical'
+  lperi=F, T, T
+  !bcx='a','s','s','s','s:s','set:s'
+  !bcx='a','s','s','s','s'
+  bcx='s','s'
+  !bcx='a','s','s','s','s','s','s','s','s','s','s','s'
+  !fbcx1=0.,0.,0.,0.,1.,0.
+  !fbcx2=0.,0.,0.,0.,1.,0.
+  xyz0= 0.0, 1e-10, 1e-10
+  xyz1=+100., 6.18, 3.14
+  lwrite_aux=T
+  lread_aux=T
+/
+&eos_init_pars
+  gamma=1., cs0=.57735027
+/
+&special_init_pars
+  initspecial='bubbles'
+  bubble_positions(1,1) = 0.0
+  bubble_positions(1,2) = 0.0
+  bubble_positions(1,3) = 0.0
+  number_of_bubbles=1
+  lambda_phi=.5
+  delta_phi =-1.6305
+  chi_quartic= 1.9816789907563308 
+  lphi_normalized_units=T
+  bubble_size_factor=3.0
+  bubble_wall_width_factor=1.0
+  Vprime_choice='quartic'
+  phimass=1.0
+  continuation_offset=30
+/

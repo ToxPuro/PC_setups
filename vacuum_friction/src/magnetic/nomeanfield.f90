@@ -1,0 +1,1 @@
+/home/touko/pencil-code/src/magnetic/nomeanfield.f90

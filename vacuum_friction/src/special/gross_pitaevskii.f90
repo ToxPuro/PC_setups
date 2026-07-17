@@ -1,0 +1,1 @@
+/home/touko/pencil-code/src/special/gross_pitaevskii.f90

@@ -1,0 +1,1 @@
+/home/touko/pencil-code/src/special/oscillation_0D_Lorenz.f90
